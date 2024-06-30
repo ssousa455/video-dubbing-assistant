@@ -1,0 +1,8 @@
+pydub
+moviepy
+google-cloud-texttospeech
+google-cloud-translate
+openai-whisper
+spacy
+spacy_syllables
+tqdm
