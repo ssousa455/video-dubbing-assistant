@@ -2,7 +2,27 @@
 __pycache__/
 *.py[cod]
 *$py.class
+# Arquivos de credenciais
+google_cloud_credentials.json
 
+# Arquivos temporários
+*.tmp
+
+# Arquivos de vídeo e áudio
+*.mp4
+*.mp3
+
+# Ambiente virtual Python
+venv/
+*.pyc
+__pycache__/
+
+# Notebooks Jupyter
+.ipynb_checkpoints/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
 # C extensions
 *.so
 
