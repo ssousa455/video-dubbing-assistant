@@ -2,6 +2,10 @@
 
 Este projeto oferece um assistente de dublagem automática que converte vídeos do inglês para o português brasileiro usando tecnologias avançadas de IA.
 
+## 🚀 Acesso Rápido
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ssousa455/video-dubbing-assistant/blob/main/video_dubbing_assistant.ipynb)
+
 ## 🚀 Funcionalidades
 
 - Extração de áudio de vídeos
