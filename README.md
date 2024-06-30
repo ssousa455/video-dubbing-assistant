@@ -1,4 +1,3 @@
-# video-dubbing-assistant
 # Assistente de Dublagem Automática de Vídeos
 
 Este projeto oferece um assistente de dublagem automática que converte vídeos do inglês para o português brasileiro usando tecnologias avançadas de IA.
