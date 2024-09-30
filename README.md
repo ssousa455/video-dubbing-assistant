@@ -31,7 +31,7 @@ Este projeto oferece um assistente de dublagem automática que converte vídeos 
 
 ## 🔧 Instalação
 
-1. Clone o repositório:  git clone https://github.com/seu-usuario/video-dubbing-assistant.git
+1. Clone o repositório:  git clone https://github.com/ssousa455/video-dubbing-assistant.git
 
 2. Instale as dependências: pip install -r requirements.txt
 
