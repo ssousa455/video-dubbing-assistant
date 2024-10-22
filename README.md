@@ -1,76 +1,48 @@
 # Assistente de Dublagem Automática de Vídeos
 
-Este projeto oferece um assistente de dublagem automática que converte vídeos do inglês para o português brasileiro usando tecnologias avançadas de IA.
+Este projeto dubla vídeos do inglês para português brasileiro usando IA. Processa todos os vídeos na pasta "Dubbing" do seu Google Drive e salva os resultados em "Dubbing/Results".
 
-## 🚀 Acesso Rápido
+## 🚀 Experimente agora!
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ssousa455/video-dubbing-assistant/blob/main/video_dubbing_assistant.ipynb)
+1. **Abra no Colab:** Clique no link abaixo para abrir o notebook no Google Colab.
 
-## 🚀 Funcionalidades
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ssousa455/video-dubbing-assistant/blob/main/video_dubbing_assistant.ipynb)
 
-- Extração de áudio de vídeos
-- Transcrição de áudio em inglês
-- Tradução do texto para português brasileiro
-- Geração de áudio em português com várias opções de vozes
-- Substituição do áudio original pelo áudio dublado
+2. **Copie para o Drive:** Copie o notebook para o seu Google Drive.
 
-## 🛠️ Tecnologias Utilizadas
+3. **Prepare os arquivos:**
 
-- **FFmpeg**: Manipulação de áudio e vídeo
-- **Whisper (OpenAI)**: Transcrição de áudio
-- **Google Cloud Text-to-Speech**: Síntese de voz de alta qualidade
-- **Google Cloud Translate**: Tradução precisa de texto
-- **MoviePy & Pydub**: Processamento de áudio e vídeo em Python
-- **spaCy**: Processamento de linguagem natural
+    - **Vídeos:** Coloque os vídeos a serem dublados na pasta "Dubbing" do seu Google Drive.
+    - **`google_cloud_credentials.json`:**  Este arquivo contém suas credenciais do Google Cloud.  Para obtê-lo:
+        1. Crie um projeto no [Google Cloud Console](https://console.cloud.google.com/).
+        2. Ative as APIs Cloud Text-to-Speech e Cloud Translation.
+        3. Crie uma chave de conta de serviço.  (Veja este vídeo para um guia visual: [Como criar a chave de conta de serviço](https://www.youtube.com/watch?v=rWcLDax-VmM)).  Baixe o arquivo JSON resultante.
+        4. Renomeie o arquivo para `google_cloud_credentials.json` e coloque-o na pasta "Dubbing" do seu Google Drive.
 
-## 📋 Pré-requisitos
+4. **Execute:** No Colab, selecione `Ambiente de execução > Executar tudo`. Aguarde a conclusão do processo. Os vídeos dublados estarão em `Dubbing/Results`.
 
-- Python 3.7+
-- Conta no Google Cloud com as APIs Text-to-Speech e Translate ativadas
-- FFmpeg instalado no sistema
+**(Observação: para melhores resultados, considere usar o modelo `large-v3` do Whisper, se disponível.)**
 
-## 🔧 Instalação
 
-1. Clone o repositório:  git clone https://github.com/ssousa455/video-dubbing-assistant.git
+## Tecnologias
 
-2. Instale as dependências: pip install -r requirements.txt
+- FFmpeg
+- Whisper (OpenAI)
+- Google Cloud Text-to-Speech
+- Google Cloud Translate
+- MoviePy & Pydub
+- spaCy
 
-3. Configure as credenciais do Google Cloud:
-- Crie um projeto no [Console do Google Cloud](https://console.cloud.google.com/)
-- Ative as APIs Cloud Text-to-Speech e Cloud Translation
-- Crie uma chave de conta de serviço e baixe o arquivo JSON
-- Renomeie o arquivo para `google_cloud_credentials.json` e coloque-o na pasta `Dubbing` do seu Google Drive
 
-## 🎬 Como Usar
+## Pré-requisitos
 
-1. Faça upload do vídeo que deseja dublar para a pasta `Dubbing` no seu Google Drive
-2. Abra o notebook `video_dubbing_assistant.ipynb` no Google Colab
-3. Execute as células do notebook em ordem
-4. Siga as instruções para selecionar o vídeo e escolher a voz para dublagem
-5. Aguarde o processo de dublagem ser concluído
-6. O vídeo dublado será salvo na pasta `Dubbing` do seu Google Drive
+- Conta Google Cloud com APIs Text-to-Speech e Cloud Translation ativadas.
+- FFmpeg instalado (o Colab geralmente já o tem).
 
-## 📝 Notas
 
-- Este projeto foi desenvolvido para uso no Google Colab, aproveitando seus recursos de GPU para processamento mais rápido
-- O tempo de processamento pode variar dependendo do tamanho do vídeo e da capacidade de processamento disponível
-- Certifique-se de ter espaço suficiente no seu Google Drive para o vídeo original e o dublado
+## Agradecimentos
 
-## 🤝 Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias.
-
-## 📄 Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
-## 🙏 Agradecimentos
-
-- OpenAI pelo modelo Whisper
-- Google Cloud pela infraestrutura de tradução e síntese de voz
-- Comunidade de código aberto pelas excelentes bibliotecas utilizadas
-
----
-
-**Observação**: Este projeto foi desenvolvido com a assistência do Claude 3.5 Sonnet, um modelo de linguagem avançado da Anthropic.
-
+- OpenAI
+- Google Cloud
+- Comunidade open source
+- [poe.com](https://poe.com/) (Gemini 1.5 Flash 128k)
